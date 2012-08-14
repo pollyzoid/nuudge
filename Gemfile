@@ -4,6 +4,13 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 
+group :test, :development do
+  gem 'rspec-rails', '~> 2.0'
+end
+
+group :test do
+  gem 'capybara'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -15,6 +22,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'slim-rails'
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
